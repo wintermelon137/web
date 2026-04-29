@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>clover</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f6fff6;
+      color: #234b2e;
+    }
+
+    header {
+      background: #2e8b57;
+      color: white;
+      text-align: center;
+      padding: 24px 16px;
+      font-size: 32px;
+      font-weight: bold;
+      letter-spacing: 2px;
+    }
+
+    nav {
+      background: #e4f7e8;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 12px;
+      padding: 14px;
+      border-bottom: 1px solid #cde8d3;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #2e8b57;
+      font-weight: bold;
+      padding: 8px 14px;
+      border-radius: 999px;
+      background: white;
+      border: 1px solid #b8d9c0;
+    }
+
+    nav a:hover {
+      background: #2e8b57;
+      color: white;
+    }
+
+    section {
+      padding: 32px 20px;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    h2 {
+      margin-top: 0;
+      color: #2e8b57;
+    }
+
+    p {
+      line-height: 1.6;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+      border: 1px solid #dcefdc;
+    }
+
+    .image-box {
+      height: 220px;
+      background: linear-gradient(180deg, #f3fff3, #e7f8e7);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+
+    .image-box img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .card-text {
+      padding: 14px;
+      text-align: center;
+    }
+
+    .card-text h3 {
+      margin: 0 0 8px;
+      font-size: 18px;
+      color: #2e8b57;
+    }
+
+    .card-text p {
+      margin: 0;
+      font-size: 14px;
+      color: #56735f;
+    }
+
+    .clover {
+      position: relative;
+      width: 90px;
+      height: 90px;
+    }
+
+    .leaf {
+      position: absolute;
+      width: 38px;
+      height: 38px;
+      background: #2e8b57;
+      border-radius: 50%;
+    }
+
+    .leaf1 { top: 0; left: 26px; }
+    .leaf2 { top: 26px; left: 0; }
+    .leaf3 { top: 26px; right: 0; }
+    .leaf4 { bottom: 0; left: 26px; }
+
+    .stem {
+      position: absolute;
+      width: 6px;
+      height: 36px;
+      background: #2e8b57;
+      left: 42px;
+      top: 54px;
+      border-radius: 3px;
+      transform: rotate(20deg);
+      transform-origin: top center;
+    }
+
+    footer {
+      text-align: center;
+      padding: 24px 16px;
+      color: #5b7c64;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <header>clover</header>
+
+  <nav>
+    <a href="#home">首页</a>
+    <a href="#gallery1">画廊1</a>
+    <a href="#gallery2">画廊2</a>
+    <a href="#gallery3">画廊3</a>
+  </nav>
+
+  <section id="home">
+    <h2>clover</h2>
+    <p>
+     cherish chieri    </p>
+  </section>
+
+  <section id="gallery1">
+    <h2>画廊 1</h2>
+    <div class="gallery">
+      <div class="card">
+        <div class="image-box">
+          <div class="clover">
+            <div class="leaf leaf1"></div>
+            <div class="leaf leaf2"></div>
+            <div class="leaf leaf3"></div>
+            <div class="leaf leaf4"></div>
+            <div class="stem"></div>
+          </div>
+        </div>
+        <div class="card-text">
+          <h3>图片位置 1</h3>
+          <p>这里以后可以放你的本地图片</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="image-box">
+          <img src="images/mirai.jpg" alt="图片1">
+        </div>
+        <div class="card-text">
+          <h3>图片位置 2</h3>
+          <p>这里以后可以放你的本地图片</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="gallery2">
+    <h2>画廊 2</h2>
+    <div class="gallery">
+      <div class="card">
+        <div class="image-box">
+          <div class="clover">
+            <div class="leaf leaf1"></div>
+            <div class="leaf leaf2"></div>
+            <div class="leaf leaf3"></div>
+            <div class="leaf leaf4"></div>
+            <div class="stem"></div>
+          </div>
+        </div>
+        <div class="card-text">
+          <h3>图片位置 3</h3>
+          <p>这里以后可以放你的本地图片</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="image-box">
+          <div class="clover">
+            <div class="leaf leaf1"></div>
+            <div class="leaf leaf2"></div>
+            <div class="leaf leaf3"></div>
+            <div class="leaf leaf4"></div>
+            <div class="stem"></div>
+          </div>
+        </div>
+        <div class="card-text">
+          <h3>图片位置 4</h3>
+          <p>这里以后可以放你的本地图片</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="gallery3">
+    <h2>画廊 3</h2>
+    <div class="gallery">
+      <div class="card">
+        <div class="image-box">
+          <div class="clover">
+            <div class="leaf leaf1"></div>
+            <div class="leaf leaf2"></div>
+            <div class="leaf leaf3"></div>
+            <div class="leaf leaf4"></div>
+            <div class="stem"></div>
+          </div>
+        </div>
+        <div class="card-text">
+          <h3>图片位置 5</h3>
+          <p>这里以后可以放你的本地图片</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="image-box">
+          <div class="clover">
+            <div class="leaf leaf1"></div>
+            <div class="leaf leaf2"></div>
+            <div class="leaf leaf3"></div>
+            <div class="leaf leaf4"></div>
+            <div class="stem"></div>
+          </div>
+        </div>
+        <div class="card-text">
+          <h3>图片位置 6</h3>
+          <p>这里以后可以放你的本地图片</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    © 2026 clover
+  </footer>
+</body>
+</html>
